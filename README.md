@@ -21,3 +21,5 @@ Note that next to the library also the bleak-library is installed; this library 
 ## finding the MAC-address of the Sphero robot
 
 The MAC-address is a ID-string used in all example scripts to connect to the right robots. There are are several methods to find the MAC-address of the Sphero robot.
+
+A very visual way to do it is to download the Sphero Edu app
