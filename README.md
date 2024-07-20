@@ -18,7 +18,7 @@ To install this library for a specific version of python, instead of all version
 
 Note that next to the library also the bleak-library is installed; this library is used for to communicate via Bluetooth.
 
-## finding the MAC-address of the Sphero robot
+## finding the MAC-address of the BB-8 robot
 
 The MAC-address is a ID-string used in all example scripts to connect to the right robots. There are are several methods to find the MAC-address of the Sphero robot.
 
@@ -35,3 +35,10 @@ Another option is too look directly for bluetooth-devices with a name which star
 `python3 find_mac_by_name.py`
 
 Note that the script can also return <code>Device not found</code>, even when your bluetooth is on. That can be temporary, just try again. If it persist, try <code>python3 discover_bluetooth.py</code> to see which bluetooth devices are around.
+
+## reading the sensor-values of the BB-8 robot
+
+In [Sphero v2 API documentation](https://spherov2.readthedocs.io/en/latest/sphero_edu.html) several examples are given of how to drive the robot and control the LEDs, but for there is also functionality to read out the sensors. 
+As long as the BB-8 robot has not moved, this functions return Null, but after a spin the sensors can be read out. An example of the usage of those function can be seen with this script:
+
+`python3 show_sensor_values.py`
