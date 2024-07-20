@@ -52,7 +52,7 @@ In this usage-example several sensor-functions are called. This is the documenta
         centimeters.
 
         ``get_location()['y']`` is the forward (+) or backward (-) distance from the origin of the program start, in
-        centimeters."""
+        centimeters.
 
 **get_orientation**: Provides the tilt angle along a given axis measured by the Gyroscope, in degrees.It returns a data dictonary, with three keys:
 
@@ -60,5 +60,11 @@ In this usage-example several sensor-functions are called. This is the documenta
 
         ``get_orientation()['roll']`` is left or right tilt angle, from -90° to 90°.
 
-        ``get_orientation()['yaw']`` is the spin (twist) angle, from -180° to 180°."""
+        ``get_orientation()['yaw']`` is the spin (twist) angle, from -180° to 180°.
+
+**get_velocity**: Provides the velocity along a given axis measured by the motor encoders, in centimeters per second. It returns a data dictonary, with two keys:
+
+        *get_velocity()['x']* is the right (+) or left (-) velocity, in centimeters per second.
+
+        ``get_velocity()['y']`` is the forward (+) or back (-) velocity, in centimeters per second.
 
