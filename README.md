@@ -24,3 +24,7 @@ The MAC-address is a ID-string used in all example scripts to connect to the rig
 
 A very visual way to do it is to download [the Sphero Edu app](https://sphero.com/pages/apps) from the Android store (not tested on other platforms). Once in the main screen, on the top right (next to settings) you see a small Sphero ball. There you can select your Robot Types. The BB-8, together with the other legacy robots, becomes visible when hit '+ show more robots'. When you bring your phone close to the robot, you can connect. Once connected you can click again on the Sphero ball to get the Connection screen, where you can see details like the firmware version and Mac Address.
 
+A more direct textual way is to make use of the functionality of the bleak library. In the usage section of the [bleak github page](https://github.com/hbldh/bleak/) a python script is given. This script is mirrored in this repository and can be called with 
+
+`python3 discover_bluetooth.py`
+
