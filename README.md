@@ -33,3 +33,5 @@ The grep is needed because all bleutooth devices in the neighbourhood are listed
 Another option is too look directly for bluetooth-devices with a name which start with BB-8:
 
 `python3 find_mac_by_name.py`
+
+Note that the script can also return 'Device not found', even when your bluetooth is out. That can be temporary, just try again. If it persist, try `python3 discover_bluetooth.py' to see which bluetooth devices are around.
