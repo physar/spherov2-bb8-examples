@@ -42,3 +42,15 @@ In [Sphero v2 API documentation](https://spherov2.readthedocs.io/en/latest/spher
 As long as the BB-8 robot has not moved, this functions return Null, but after a spin the sensors can be read out. An example of the usage of those function can be seen with this script:
 
 `python3 show_sensor_values.py`
+
+In this usage-example several sensor-functions are called. THis is the documentation that can be found in the code:
+
+get_location():
+        """Provides the location where the robot is in space (x,y) relative to the origin, in centimeters. This is not
+        the distance traveled during the program, it is the offset from the origin (program start).
+
+        ``get_location()['x']`` is the right (+) or left (-) distance from the origin of the program start, in
+        centimeters.
+
+        ``get_location()['y']`` is the forward (+) or backward (-) distance from the origin of the program start, in
+        centimeters."""
