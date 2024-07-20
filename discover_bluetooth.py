@@ -1,4 +1,4 @@
-% From https://github.com/hbldh/bleak/
+# From https://github.com/hbldh/bleak/
 
 import asyncio
 from bleak import BleakScanner
