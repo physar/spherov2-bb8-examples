@@ -43,13 +43,22 @@ As long as the BB-8 robot has not moved, this functions return Null, but after a
 
 `python3 show_sensor_values.py`
 
-In this usage-example several sensor-functions are called. THis is the documentation that can be found in the code:
+In this usage-example several sensor-functions are called. This is the documentation that can be found in the code:
 
 **get_location**: Provides the location where the robot is in space (x,y) relative to the origin, in centimeters. This is not
-        the distance traveled during the program, it is the offset from the origin (program start).
+        the distance traveled during the program, it is the offset from the origin (program start). It returns a data dictonary, with two keys:
 
         ``get_location()['x']`` is the right (+) or left (-) distance from the origin of the program start, in
         centimeters.
 
         ``get_location()['y']`` is the forward (+) or backward (-) distance from the origin of the program start, in
         centimeters."""
+
+**get_orientation**: Provides the tilt angle along a given axis measured by the Gyroscope, in degrees.It returns a data dictonary, with three keys:
+
+        ``get_orientation()['pitch']`` is the forward or backward tilt angle, from -180° to 180°.
+
+        ``get_orientation()['roll']`` is left or right tilt angle, from -90° to 90°.
+
+        ``get_orientation()['yaw']`` is the spin (twist) angle, from -180° to 180°."""
+
