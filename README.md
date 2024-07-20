@@ -34,4 +34,4 @@ Another option is too look directly for bluetooth-devices with a name which star
 
 `python3 find_mac_by_name.py`
 
-Note that the script can also return <code>Device not found</code>, even when your bluetooth is on. That can be temporary, just try again. If it persist, try `python3 discover_bluetooth.py' to see which bluetooth devices are around.
+Note that the script can also return <code>Device not found</code>, even when your bluetooth is on. That can be temporary, just try again. If it persist, try <code>python3 discover_bluetooth.py</code> to see which bluetooth devices are around.
