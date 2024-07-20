@@ -45,8 +45,7 @@ As long as the BB-8 robot has not moved, this functions return Null, but after a
 
 In this usage-example several sensor-functions are called. THis is the documentation that can be found in the code:
 
-get_location():
-        """Provides the location where the robot is in space (x,y) relative to the origin, in centimeters. This is not
+**get_location**: Provides the location where the robot is in space (x,y) relative to the origin, in centimeters. This is not
         the distance traveled during the program, it is the offset from the origin (program start).
 
         ``get_location()['x']`` is the right (+) or left (-) distance from the origin of the program start, in
