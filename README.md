@@ -26,5 +26,5 @@ A very visual way to do it is to download [the Sphero Edu app](https://sphero.co
 
 A more direct textual way is to make use of the functionality of the bleak library. In the usage section of the [bleak github page](https://github.com/hbldh/bleak/) a python script is given. This script is mirrored in this repository and can be called with 
 
-`python3 discover_bluetooth.py`
+`python3 discover_bluetooth.py | grep BB-8`
 
