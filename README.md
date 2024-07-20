@@ -48,23 +48,32 @@ In this usage-example several sensor-functions are called. This is the documenta
 **get_location**: Provides the location where the robot is in space (x,y) relative to the origin, in centimeters. This is not
         the distance traveled during the program, it is the offset from the origin (program start). It returns a data dictonary, with two keys:
 
-        ``get_location()['x']`` is the right (+) or left (-) distance from the origin of the program start, in
+        get_location()['x'] is the right (+) or left (-) distance from the origin of the program start, in
         centimeters.
 
-        ``get_location()['y']`` is the forward (+) or backward (-) distance from the origin of the program start, in
+        get_location()['y'] is the forward (+) or backward (-) distance from the origin of the program start, in
         centimeters.
 
-**get_orientation**: Provides the tilt angle along a given axis measured by the Gyroscope, in degrees.It returns a data dictonary, with three keys:
+**get_orientation**: Provides the tilt angle along a given axis measured by the Gyroscope, in degrees. It returns a data dictonary, with three keys:
 
-        ``get_orientation()['pitch']`` is the forward or backward tilt angle, from -180° to 180°.
+        get_orientation()['pitch'] is the forward or backward tilt angle, from -180° to 180°.
 
-        ``get_orientation()['roll']`` is left or right tilt angle, from -90° to 90°.
+        get_orientation()['roll'] is left or right tilt angle, from -90° to 90°.
 
-        ``get_orientation()['yaw']`` is the spin (twist) angle, from -180° to 180°.
+        get_orientation()['yaw'] is the spin (twist) angle, from -180° to 180°.
 
 **get_velocity**: Provides the velocity along a given axis measured by the motor encoders, in centimeters per second. It returns a data dictonary, with two keys:
 
-        *get_velocity()['x']* is the right (+) or left (-) velocity, in centimeters per second.
+        get_velocity()['x'] is the right (+) or left (-) velocity, in centimeters per second.
 
-        ``get_velocity()['y']`` is the forward (+) or back (-) velocity, in centimeters per second.
+        get_velocity()['y'] is the forward (+) or back (-) velocity, in centimeters per second.
 
+**get_acceleration**:
+        """Provides motion acceleration data along a given axis measured by the Accelerometer, in g's, where g =
+        9.80665 m/s^2. It returns a data dictonary, with three keys:
+
+        get_acceleration()['x'] is the left-to-right acceleration, from -8 to 8 g's.
+
+        get_acceleration()['y'] is the forward-to-back acceleration, from of -8 to 8 g's.
+
+        get_acceleration()['z'] is the upward-to-downward acceleration, from -8 to 8 g's.
