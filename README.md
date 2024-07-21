@@ -86,6 +86,26 @@ In this usage-example several sensor-functions are called. This is the documenta
 
         get_gyroscope().['yaw'] is the rate of sideways spin, from -2,000° to 2,000° per second.
 
+**get_vertical_acceleration**: This is the upward or downward acceleration regardless of the robot's orientation, from -8 to 8 g's.        
+
+**get_heading**: Provides the target directional angle, in degrees. Assuming you aim the robot with the tail facing you,
+        then 0° heading is forward, 90° is right, 180° is backward, and 270° is left.
+
+**get_speed**: Provides the current target speed of the robot, from -255 to 255, where positive is forward, negative is
+        backward, and 0 is stopped.
+
+**get_distance**: Provides the total distance traveled in the program, in centimeters.
+
+**get_main_led**: Provides the RGB color of the main LEDs, from 0 to 255 for each color channel.
+
+        ``get_main_led().r`` is the red channel, from 0 - 255.
+
+        ``get_main_led().g`` is the green channel, from 0 - 255.
+
+        ``get_main_led().b`` is the blue channel, from 0 - 255.
+
+
+        
 Note that the script doesn't always connect to bluetooth. Often this is a time-out. Please try again or run script <code>python3 find_mac_by_name.py</code>.
 
         
