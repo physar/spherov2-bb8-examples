@@ -98,11 +98,11 @@ In this usage-example several sensor-functions are called. This is the documenta
 
 **get_main_led**: Provides the RGB color of the main LEDs, from 0 to 255 for each color channel.
 
-        ``get_main_led().r`` is the red channel, from 0 - 255.
+        get_main_led().r is the red channel, from 0 - 255.
 
-        ``get_main_led().g`` is the green channel, from 0 - 255.
+        get_main_led().g is the green channel, from 0 - 255.
 
-        ``get_main_led().b`` is the blue channel, from 0 - 255.
+        get_main_led().b is the blue channel, from 0 - 255.
 
 
         
