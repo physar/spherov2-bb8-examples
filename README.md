@@ -68,8 +68,7 @@ In this usage-example several sensor-functions are called. This is the documenta
 
         get_velocity()['y'] is the forward (+) or back (-) velocity, in centimeters per second.
 
-**get_acceleration**:
-        """Provides motion acceleration data along a given axis measured by the Accelerometer, in g's, where g =
+**get_acceleration**: Provides motion acceleration data along a given axis measured by the Accelerometer, in g's, where g =
         9.80665 m/s^2. It returns a data dictonary, with three keys:
 
         get_acceleration()['x'] is the left-to-right acceleration, from -8 to 8 g's.
@@ -77,3 +76,16 @@ In this usage-example several sensor-functions are called. This is the documenta
         get_acceleration()['y'] is the forward-to-back acceleration, from of -8 to 8 g's.
 
         get_acceleration()['z'] is the upward-to-downward acceleration, from -8 to 8 g's.
+
+**get_gyroscope**: Provides the rate of rotation around a given axis measured by the gyroscope, from -2,000° to 2,000°
+        per second. It returns a data dictonary, with three keys:
+
+        get_gyroscope().['pitch'] is the rate of forward or backward spin, from -2,000° to 2,000° per second.
+
+        get_gyroscope().['roll'] is the rate of left or right spin, from -2,000° to 2,000° per second.
+
+        get_gyroscope().['yaw'] is the rate of sideways spin, from -2,000° to 2,000° per second.
+
+Note that the script doesn't always connect to bluetooth. Often this is a time-out. Please try again or run script <code>python3 find_mac_by_name.py</code>.
+
+        
